@@ -4,7 +4,7 @@ def caesar_cipher(string, factor)
   alhabect_up = ('A'..'Z').to_a
   cipher = []
 
-  string.split('').map do |chr|
+  string.split('').each do |chr|
     if alphabect_lower.include?(chr)
       index = alphabect_lower.index(chr)
       cipher << chr = alphabect_lower[(index+factor) % 26]
