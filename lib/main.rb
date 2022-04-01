@@ -16,8 +16,11 @@ def caesar_cipher(string, factor)
     end
   end
 
-  p cipher.join
-
+  cipher.join
 end
 
-caesar_cipher('What a string!', 5)
+print 'Enter your string: '
+string = gets.chomp
+print 'Enter your factor shift: '
+factor = gets.to_i
+p caesar_cipher(string, factor)
